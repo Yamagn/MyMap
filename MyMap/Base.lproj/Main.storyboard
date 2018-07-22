@@ -30,14 +30,22 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Fdk-ch-6UB">
                                 <rect key="frame" x="0.0" y="50" width="375" height="617"/>
                             </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a7j-ur-6QI">
+                                <rect key="frame" x="337" y="637" width="22" height="22"/>
+                                <connections>
+                                    <action selector="changeMapButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y7d-vI-PZ3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Fdk-ch-6UB" secondAttribute="trailing" id="BmH-kL-j0S"/>
                             <constraint firstItem="tsJ-Li-IeI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Q8A-cn-3Af"/>
                             <constraint firstItem="Fdk-ch-6UB" firstAttribute="top" secondItem="tsJ-Li-IeI" secondAttribute="bottom" id="TU7-65-p1O"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="a7j-ur-6QI" secondAttribute="bottom" constant="8" id="c8U-pL-cK0"/>
                             <constraint firstItem="tsJ-Li-IeI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="da4-vu-rjU"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Fdk-ch-6UB" secondAttribute="bottom" id="gaX-Ca-vpC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="a7j-ur-6QI" secondAttribute="trailing" constant="16" id="ov6-pq-wHd"/>
                             <constraint firstItem="Fdk-ch-6UB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="q7A-GZ-xDR"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tsJ-Li-IeI" secondAttribute="trailing" id="sra-rL-iQT"/>
                         </constraints>
